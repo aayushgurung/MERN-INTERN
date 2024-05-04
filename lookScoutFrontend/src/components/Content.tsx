@@ -8,9 +8,7 @@ type contentProps = {
 const Content: React.FC<contentProps> = ({ children, style }) => {
   return (
     <>
-      <div className={`pl-[32px] pr-[32px] ${style} w-[1280px] mx-auto `}>
-        {children}
-      </div>
+      <div className={`${style} `}>{children}</div>
     </>
   );
 };
