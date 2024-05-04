@@ -1,10 +1,9 @@
 const handleFormSubmit = (req, res) => {
-  // Log the received data
-  console.log("INVODKED CONTROLLER");
-  console.log("Received form data:", req.body);
-  // You can process the form data here (e.g., save to database)
-  // Respond with a success message
-  res.status(200).send("Form data received successfully!");
+  console.log(req.body);
+  console.log("Form data received successfully in the controller!");
+  res
+    .status(200)
+    .json({ message: "Form data received successfully in the controller!" });
 };
 
 module.exports = {
